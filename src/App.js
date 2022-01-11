@@ -1,13 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Login from './pages/login/Login.component'
 
 function App() {
   return (
-    <div>
-      <Login/>
-    </div>
+    <Routes>
+      <Route exact path='/' element={<Login/>} />
+    </Routes>
   );
 }
 
