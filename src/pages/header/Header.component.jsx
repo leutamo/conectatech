@@ -1,9 +1,19 @@
-import React from "react";
 
-const Header = () => {
+const UserHeader = ({name}) => {
     return(
-        <h2 className="bg-black text-white">Header</h2>
+        <>
+            <header>
+                <nav>
+                    <ul>
+                        <li className="bg-black text-white">icono</li>
+                        <li>Crear Petición</li>
+                        <li>Peticiones Resueltas</li>
+                        <li>Mis Peticiones</li>
+                        <li>{name}</li>
+                    </ul>
+                </nav>
+            </header>
+        </>
     );
 }
-
-export default Header;
+export default UserHeader;
