@@ -9,7 +9,7 @@ const Login = () => {
 
     return(
         <section>
-            <h1>Login User</h1>
+            <h1 className='bg-black text-white'>Login User</h1>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="username">Username:</label>
                 <input type="text" id="username" autoComplete="off" required />
