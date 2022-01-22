@@ -38,8 +38,6 @@ const ProfessionalHeader = ({name}) => {
         </ul>
       </nav>
     </header>
-
-    
   );
 }
 export default ProfessionalHeader;

@@ -39,8 +39,6 @@ const UserHeader = ({name}) => {
         </ul>
       </nav>
     </header>
-
-    
   );
 }
 export default UserHeader;
