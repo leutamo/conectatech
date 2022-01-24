@@ -13,7 +13,7 @@ const AsideLogo = ()=> {
 		</p>
 		<h2 className='my-20 font-black conectatech'>
 		  ConectaTech
-		</h2>
+	    </h2>
 	  </div>
 	</aside>
   );
