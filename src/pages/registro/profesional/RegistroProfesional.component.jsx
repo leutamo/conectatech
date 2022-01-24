@@ -1,7 +1,7 @@
 
 const RegistroProfesional = ()=> {
   return(
-		<div className="w-2/4">
+    <div className="w-2/4">
       <form className='p-8'>
         <h2>Regístrate, y así podrás ser parte de nuestra comunidad.</h2>
         <div className="form control">
