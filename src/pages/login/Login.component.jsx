@@ -9,7 +9,7 @@ const Login = () => {
     }
 
     return(       
-        <div className="bg-primary grid grid-cols-1 md:grid-cols-3 h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8 gap-8">
+        <div className="bg-primary grid grid-cols-1 md:grid-cols-3 h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8 gap-8 h-screen">
           <div className="space-y-8 hidden md:block col-span-2 text-xl xl:text-base">
             <h1 className="text-center">Conectatech</h1>
             <img src="https://images.unsplash.com/photo-1638913660106-73b4bac0db09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80" alt="Technology imagen" />
