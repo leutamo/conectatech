@@ -8,21 +8,22 @@ const Login = () => {
         console.log("Presionando el botón de Login");
     }
 
-    return(
-        <>
-        {/*
-          This example requires updating your template:
-  
-          ```
-          <html class="h-full bg-gray-50">
-          <body class="h-full">
-          ```
-        */}
-        <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-md w-1/2 space-y-8 hidden md:block">
-              <h1 className="bg-black">Imagen</h1>
+    return(       
+        <div className="bg-primary grid grid-cols-1 md:grid-cols-3 h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8 gap-8">
+          <div className="space-y-8 hidden md:block col-span-2 text-xl xl:text-base">
+            <h1 className="text-center">Conectatech</h1>
+            <img src="https://images.unsplash.com/photo-1638913660106-73b4bac0db09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80" alt="Technology imagen" />
+            <figure className="quote text-center">
+              <blockquote>
+                There is no elevator to success, you have to take the stairs.
+              </blockquote>
+              <figcaption>
+                &mdash; Zig Ziglar, <cite>from Somewhere</cite>
+              </figcaption>
+            </figure>
+
           </div>
-          <div className="max-w-md w-1/2 space-y-8">
+          <div className="space-y-8 mx-8 md:mx-4">
             <div>
               <img
                 className="mx-auto h-12 w-auto"
@@ -30,9 +31,9 @@ const Login = () => {
                 alt="Workflow"
               />
               <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Sign in to your account</h2>
-              <p className="mt-2 text-center text-sm text-gray-600">
+              <p className="mt-2 text-center text-sm text-gray-200">
                 Or{' '}
-                <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+                <a href="#" className="font-medium text-indigo-400 hover:text-indigo-500">
                   start your 14-day free trial
                 </a>
               </p>
@@ -78,13 +79,13 @@ const Login = () => {
                     type="checkbox"
                     className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
                   />
-                  <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900">
+                  <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-200">
                     Remember me
                   </label>
                 </div>
   
                 <div className="text-sm">
-                  <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+                  <a href="#" className="font-medium text-indigo-400 hover:text-indigo-500">
                     Forgot your password?
                   </a>
                 </div>
@@ -104,7 +105,7 @@ const Login = () => {
             </form>
           </div>
         </div>
-      </>
+      
     );
 }
 
