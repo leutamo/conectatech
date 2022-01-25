@@ -1,11 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { LockClosedIcon } from '@heroicons/react/solid'
 
 const Login = () => {
-
+    let navigate = useNavigate();
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log("Presionando el botón de Login");
+        navigate('/user');
     }
 
     return(       
@@ -30,7 +32,7 @@ const Login = () => {
                 src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                 alt="Workflow"
               />
-              <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Sign in to your account</h2>
+              <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-200">Login to your account</h2>
               <p className="mt-2 text-center text-sm text-gray-200">
                 Or{' '}
                 <a href="#" className="font-medium text-indigo-400 hover:text-indigo-500">
@@ -94,14 +96,23 @@ const Login = () => {
               <div>
                 <button
                   type="submit"
+                  onClick={handleSubmit}
                   className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
                   <span className="absolute left-0 inset-y-0 flex items-center pl-3">
                     <LockClosedIcon className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" aria-hidden="true" />
                   </span>
-                  Sign in
+                  Login
                 </button>
               </div>
+
+              <p className="mt-2 text-center text-sm text-gray-200">
+                O{' '}
+                <a href="#" className="font-medium text-indigo-400 hover:text-indigo-500">
+                  Crea tu cuenta
+                </a>
+              </p>
+
             </form>
           </div>
         </div>
