@@ -4,10 +4,13 @@ import { Route, Routes } from 'react-router-dom'
 import Login from '../pages/login/Login.component'
 import ProfessionalHeader from '../pages/header/professional/ProfessionalHeader.component'
 import UserHeader from '../pages/header/user/UserHeader.component'
-import RegistroProfesional from '../pages/registro/profesional/RegistroProfesional.component'
+// import RegistroProfesional from '../pages/registro/profesional/RegistroProfesional.component'
+// import Registro from '../pages/registro/Registro.component'
 import User from '../pages/User'
 import Feed from '../pages/User/Feed'
 import UserPost from '../pages/User/Post'
+import IndexRegistro from '../pages/registro/IndexRegistro.component'
+import IndexRegistroProfesional from '../pages/registro/profesional/IndexRegistroProfesional.component'
 
 const Router = () => {
   const [userName] = useState('Usuario')
@@ -15,9 +18,10 @@ const Router = () => {
 
   return <Routes>
     <Route path='/' element={<Login />} />
-    <Route path='/ejemplo' element={<RegistroProfesional />} />
-    <Route path='/user' element={<UserHeader  name={ userName }/>} />
-    <Route path='/profesional' element={<ProfessionalHeader  name = { professionaName }/>} />
+    <Route path='/registro' element={<IndexRegistro/>} />
+    <Route path='/registroProfesional' element={<IndexRegistroProfesional />} />
+    <Route path='/userHeader' element={<UserHeader  name={ userName }/>} />
+    <Route path='/profesionalHeader' element={<ProfessionalHeader  name = { professionaName }/>} />
     <Route path='user/:username' element={<User />}>
       <Route path='feed' element={<Feed />} />
       <Route path='post/:id' element={<UserPost />} />

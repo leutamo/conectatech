@@ -3,8 +3,8 @@ import './AsideLogo.css'
 
 const AsideLogo = ()=> {
   return(
-    <aside className='w-1/4'>
-      <div className='bg-gray-300 h-full h-screen py-40'>
+    <aside className='w-4/12'>
+      <div className='bg-gray-300 h-screen py-40'>
         <div className='imgContainer'>
           <img src={logo} alt='Conectatech Logo' className='w-4/5 mx-auto'/>
         </div>
