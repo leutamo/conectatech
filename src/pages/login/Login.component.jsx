@@ -7,7 +7,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log("Presionando el botón de Login");
-        navigate('/user');
+        navigate('/profesionalHomePage');
     }
 
     return(       
