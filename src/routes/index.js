@@ -11,6 +11,7 @@ import Feed from '../pages/User/Feed'
 import UserPost from '../pages/User/Post'
 import IndexRegistro from '../pages/registro/IndexRegistro.component'
 import IndexRegistroProfesional from '../pages/registro/profesional/IndexRegistroProfesional.component'
+import ProfessionalHomePage from '../pages/homepage/professional/ProfessionalHomePage'
 
 const Router = () => {
   const [userName] = useState('Usuario')
@@ -22,6 +23,7 @@ const Router = () => {
     <Route path='/registroProfesional' element={<IndexRegistroProfesional />} />
     <Route path='/userHeader' element={<UserHeader  name={ userName }/>} />
     <Route path='/profesionalHeader' element={<ProfessionalHeader  name = { professionaName }/>} />
+    <Route path='/profesionalHomePage' element={<ProfessionalHomePage  name = { professionaName }/>} />
     <Route path='user/:username' element={<User />}>
       <Route path='feed' element={<Feed />} />
       <Route path='post/:id' element={<UserPost />} />
