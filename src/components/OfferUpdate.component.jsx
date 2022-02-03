@@ -29,7 +29,7 @@ function OfferUpdate(props) {
   };
 
   return (
-    <article className="max-h-300 -w-full md:w-1/2 px-2 py-2">
+    <article className="max-h-500 -w-full md:w-1/2 px-2 py-2">
       <div className="rounded-lg bg-white overflow-hidden shadow py-8 px-5">
         <div className="flex flex-row justify-between mb-2 leading-none">
           <span className="text-frilea-text-grey"> {timeTrans}</span>
