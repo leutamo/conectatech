@@ -1,8 +1,8 @@
-import './ProfessionalHeaderStyle.css';
+import "./ProfessionalHeaderStyle.css";
 
-const ProfessionalHeader = ({name}) => {
-  return(
-    <header className='professionalHeader'>
+const ProfessionalHeader = ({ name }) => {
+  return (
+    <header className="professionalHeader">
       <nav className="p-6">
         <ul className="flex justify-between items-center">
           <div>
@@ -11,24 +11,28 @@ const ProfessionalHeader = ({name}) => {
           <div className="flex items-center">
             <li className="mx-8 hover:animate-pulse">Resolver Petición</li>
             <li className="mx-8 hover:animate-pulse">Peticiones Resueltas</li>
-            <li className="mx-8"> 
+            <li className="mx-8">
               <div className="flex justify-between items-center">
                 <div className="block h-9 w-9 rounded-full overflow-hidden  mr-2">
-                  <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="" />
+                  <img
+                    src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+                    alt=""
+                  />
                 </div>
                 <div className="dropdown dropdown-hover dropdown-end">
-                  <div tabindex="0">
-                    {name}
-                  </div>
-                  <ul tabindex="0" className="p-2 shadow menu dropdown-content rounded-box w-52 professionalDropdownBox">
+                  <div tabIndex="0">{name}</div>
+                  <ul
+                    tabIndex="0"
+                    className="p-2 shadow menu dropdown-content rounded-box w-52 professionalDropdownBox"
+                  >
                     <li>
-                      <a className='hover:animate-pulse'>Editar Perfil</a>
-                    </li> 
+                      <a className="hover:animate-pulse">Editar Perfil</a>
+                    </li>
                     <li>
-                      <a className='hover:animate-pulse'>Privacidad</a>
-                    </li> 
+                      <a className="hover:animate-pulse">Privacidad</a>
+                    </li>
                     <li>
-                      <a className='hover:animate-pulse'>Cerrar Sesión</a>
+                      <a className="hover:animate-pulse">Cerrar Sesión</a>
                     </li>
                   </ul>
                 </div>
@@ -39,5 +43,5 @@ const ProfessionalHeader = ({name}) => {
       </nav>
     </header>
   );
-}
+};
 export default ProfessionalHeader;
