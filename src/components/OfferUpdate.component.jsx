@@ -34,13 +34,13 @@ function OfferUpdate(props) {
         <div className="flex flex-row justify-between mb-2 leading-none">
           <span className="text-frilea-text-grey"> {timeTrans}</span>
           <a
-            class="mb-4 inline-block font-bold text-cyan-800 px-5 md:order-2 focus:outline-none"
+            className="mb-4 inline-block font-bold text-cyan-800 px-5 md:order-2 focus:outline-none"
             href={urlVerMas}
           >
             Ver más
           </a>
         </div>
-        <div className="avatar">
+        <div>
           <div className="rounded-full w-12 h-12">
             <img src={urlImgProfile} alt="Profile" />
           </div>
@@ -50,7 +50,7 @@ function OfferUpdate(props) {
           {[1, 2, 3, 4, 5].map((index) => {
             return (
               <RatingIcon
-                index={index}
+                key={index}
                 rating={rating}
                 hoverRating={hoverRating}
                 onMouseEnter={onMouseEnter}
@@ -88,7 +88,7 @@ function OfferUpdate(props) {
             </tbody>
           </table>
         </div>
-        <div class="mb-5">
+        <div className="mb-5">
           <p>{descripcion}</p>
         </div>
         <div className="text-center ">
