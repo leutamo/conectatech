@@ -40,7 +40,7 @@ function OfferUpdate(props) {
             Ver más
           </a>
         </div>
-        <div>
+        <div className="avatar">
           <div className="rounded-full w-12 h-12">
             <img src={urlImgProfile} alt="Profile" />
           </div>
@@ -51,6 +51,7 @@ function OfferUpdate(props) {
             return (
               <RatingIcon
                 key={index}
+                index={index}
                 rating={rating}
                 hoverRating={hoverRating}
                 onMouseEnter={onMouseEnter}
