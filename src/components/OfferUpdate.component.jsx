@@ -90,6 +90,7 @@ function OfferUpdate(props) {
           </table>
         </div>
         <div className="mb-5">
+
           <p>{descripcion}</p>
         </div>
         <div className="text-center ">
